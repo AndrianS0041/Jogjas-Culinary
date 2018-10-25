@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Navigation_Activity"
+    tools:showIn="@layout/app_bar_navigation_">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#4be760"
+                android:foreground="?attr/selectableItemBackground"
+                android:drawableTop="@drawable/delivery"
+                android:paddingTop="25dp"
+                android:text="Pre order"
+                android:textAllCaps="false"
+                android:textColor="#2f2e2e"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#524d47"
+                android:foreground="?attr/selectableItemBackground"
+                android:drawableTop="@drawable/delivery"
+                android:paddingTop="25dp"
+                android:text="Special Today"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="0dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="100dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#e7595d"
+                android:drawableTop="@drawable/delivery"
+                android:paddingTop="25dp"
+                android:text="Promo"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#a084d1"
+                android:drawableTop="@drawable/cod"
+                android:paddingTop="25dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Roti"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#80e7a9"
+                android:drawableTop="@drawable/cod"
+                android:paddingTop="25dp"
+                android:text="Aneka kue"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:background="#bae109"
+                android:drawableTop="@drawable/cod"
+                android:paddingTop="40dp"
+                android:text="Anek makanan"
+                android:textAllCaps="false"
+                android:textColor="#2f2e2e"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_margin="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:background="#cc8d66"
+                android:drawableTop="@drawable/cod"
+                android:paddingTop="40dp"
+                android:text="Jajanan"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:paddingTop="25dp"
+                android:background="#63c28c"
+                android:drawableTop="@drawable/ikon"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="Minuman"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp"
+
+               />
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#f71735"
+                android:foreground="?attr/selectableItemBackground"
+                android:drawableTop="@drawable/ikon"
+                android:paddingTop="25dp"
+                android:text="Khas"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+
+            <Button
+                android:id="@+id/b10"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="#88a6db"
+                android:drawableTop="@drawable/ikon"
+                android:paddingTop="25dp"
+                android:text="manisan"
+                android:foreground="?attr/selectableItemBackground"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+
