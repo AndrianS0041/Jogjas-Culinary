@@ -20,11 +20,11 @@ public class Splasscreen extends AppCompatActivity {
         Animation transisisplash = AnimationUtils.loadAnimation(this,R.anim.transisisplash);
         textsplash.startAnimation(transisisplash);
         imagesplash.startAnimation(transisisplash);
-        final Intent i = new Intent(this,LoginActivity.class);
+        final Intent i = new Intent(this,Imageslider.class);
         Thread timer = new Thread(){
             public void run (){
                 try {
-                    sleep(2500);
+                    sleep(2000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

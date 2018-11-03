@@ -53,7 +53,6 @@ public class LoginActivity extends AppCompatActivity {
         String pass_file = sharedPreferences.getString("password", Default);
         String email_file = sharedPreferences.getString("email", Default);
         String gender_file = sharedPreferences.getString("gender", Default);
-        SharedPreferences sp = getSharedPreferences("Score", Context.MODE_PRIVATE);
 
         if (name_file.equals(Default) || pass_file.equals(Default) || email_file.equals(Default) || gender_file.equals(Default)) {
 
@@ -115,7 +114,7 @@ public class LoginActivity extends AppCompatActivity {
                             public void run() {
                                 //Intent start to open the navigation drawer activity
                                 progressBar.cancel();//Progress bar will be cancelled (hide from screen) when this run function will execute after 3.5seconds
-                                Intent intent = new Intent(LoginActivity.this, Navigation_Activity.class);
+                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(intent);
                                 finish();
                             }
@@ -163,7 +162,7 @@ public class LoginActivity extends AppCompatActivity {
                                 public void run() {
                                     //Intent start to open the navigation drawer activity
                                     progressBar.cancel();//Progress bar will be cancelled (hide from screen) when this run function will execute after 3.5seconds
-                                    Intent intent = new Intent(LoginActivity.this, Navigation_Activity.class);
+                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                                     startActivity(intent);
                                     finish();
                                 }
@@ -324,12 +323,10 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        SharedPreferences sp = getSharedPreferences("Score", Context.MODE_PRIVATE);
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        SharedPreferences sp = getSharedPreferences("Score", Context.MODE_PRIVATE);
     }
 }

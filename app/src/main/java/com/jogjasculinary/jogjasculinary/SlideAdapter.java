@@ -15,6 +15,9 @@ public class SlideAdapter extends PagerAdapter {
     Context context;
     LayoutInflater inflater;
 
+    public SlideAdapter(Context context) {
+        this.context = context;
+    }
     // list of images
     public int[] lst_images = {
             R.drawable.ikon, //ikon awal
@@ -45,10 +48,6 @@ public class SlideAdapter extends PagerAdapter {
     };
 
 
-    public SlideAdapter(Context context) {
-        this.context = context;
-    }
-
     @Override
     public int getCount() {
         return lst_title.length;
@@ -62,11 +61,14 @@ public class SlideAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.slide,container,false);
+        View view = inflater.inflate(R.layout.slider,container,false);
+
         LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.slidelinearlayout);
+
         ImageView imgslide = (ImageView)  view.findViewById(R.id.slideimg);
         TextView txttitle= (TextView) view.findViewById(R.id.txttitle);
         TextView description = (TextView) view.findViewById(R.id.txtdescription);
+
         layoutslide.setBackgroundColor(lst_backgroundcolor[position]);
         imgslide.setImageResource(lst_images[position]);
         txttitle.setText(lst_title[position]);
@@ -74,9 +76,9 @@ public class SlideAdapter extends PagerAdapter {
         container.addView(view);
         return view;
     }
-
-    @Override
-    public void destroyItem(ViewGroup container, int position, Object object) {
-        container.removeView((LinearLayout)object);
-    }
 }
+
+
+
+
+
