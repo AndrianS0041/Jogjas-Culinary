@@ -46,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
         final SharedPreferences sharedPreferences = getSharedPreferences("Content_main", Context.MODE_PRIVATE);//reference to shared preference file
 
         //Creating a shared preference file  to save the name ,mail address,password and also for setting the correct xml file
@@ -56,7 +57,6 @@ public class LoginActivity extends AppCompatActivity {
 
         if (name_file.equals(Default) || pass_file.equals(Default) || email_file.equals(Default) || gender_file.equals(Default)) {
 
-            setContentView(R.layout.activity_login);
 
             show = (Button) findViewById(R.id.show);  //Show button in password
             edit_password = (EditText) findViewById(R.id.password);   //Password EditText
