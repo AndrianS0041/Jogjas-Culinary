@@ -27,7 +27,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-//import android.content.DialogInterface;
 
 public class LoginActivity extends AppCompatActivity {
     //variables
@@ -37,7 +36,6 @@ public class LoginActivity extends AppCompatActivity {
     private final String Default = "N/A";
     String[] Gender = {"Male", "Female"};
     String gender;
-    final static String TARGET_BASE_PATH = "/sdcard/appname/voices/";
     Spinner spinner;
     ImageView icon_user;
     private ProgressDialog progressBar;//Create a circular progressBar Dialog
@@ -56,8 +54,6 @@ public class LoginActivity extends AppCompatActivity {
         String gender_file = sharedPreferences.getString("gender", Default);
 
         if (name_file.equals(Default) || pass_file.equals(Default) || email_file.equals(Default) || gender_file.equals(Default)) {
-
-
             show = (Button) findViewById(R.id.show);  //Show button in password
             edit_password = (EditText) findViewById(R.id.password);   //Password EditText
             edit_email = (EditText) findViewById(R.id.email);   //email EditText
@@ -65,14 +61,12 @@ public class LoginActivity extends AppCompatActivity {
             show.setOnClickListener(new showOrHidePassword());//invoking the showOrHidePassword class to show the password
             toast = (TextView) findViewById(R.id.toast_help);//toast_help object
 
-
             //Spinner for choosing the gender
             spinner = (Spinner) findViewById(R.id.spinner);
             ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.spinner, Gender);
             adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
             spinner.setAdapter(adapter);
             spinner.setOnItemSelectedListener(new spinner());
-            //
 
             getStarted = (Button) findViewById(R.id.getStarted);
             getStarted.setOnClickListener(new View.OnClickListener() {
@@ -89,11 +83,9 @@ public class LoginActivity extends AppCompatActivity {
                     if (save_name.equals("") || save_email.equals("") || save_password.equals("")) {
                         try{
                             Toast.makeText(LoginActivity.this, "Please Enter the Details", Toast.LENGTH_SHORT).show();
+                        } catch (Exception e) {
                         }
-                        catch (Exception e)
-                        {}
-                    }
-                    else {
+                    } else {
                         SharedPreferences.Editor editor = sharedPreferences.edit();
                         editor.putString("name", save_name);
                         editor.putString("password", save_password);

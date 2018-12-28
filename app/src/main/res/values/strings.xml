@@ -13,6 +13,11 @@
               Enjoy the app! </string>
 
     <string name="title_activity_main">MainActivity</string>
+    //intro slide
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
     //main activity
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
