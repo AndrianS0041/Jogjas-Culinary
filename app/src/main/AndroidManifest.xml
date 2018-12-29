@@ -20,16 +20,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Imageslider" />
+
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".profil"></activity>
+
+        <activity android:name=".profil">
+
+        </activity>
+
     </application>
 
 </manifest>
