@@ -81,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     //If and else are used to check if all the three text field are empty or not
                     if (save_name.equals("") || save_email.equals("") || save_password.equals("")) {
-                        try{
+                        try {
                             Toast.makeText(LoginActivity.this, "Please Enter the Details", Toast.LENGTH_SHORT).show();
                         } catch (Exception e) {
                         }
@@ -115,7 +115,13 @@ public class LoginActivity extends AppCompatActivity {
                 }
             });
 
-    //re login
+        } else {
+            setContentView(R.layout.activity_main);
+        }
+    }
+
+
+    /*re login
         } else {
             setContentView(R.layout.activity_relogin);
             icon_user = (ImageView) findViewById(R.id.image_icon);
@@ -172,7 +178,7 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-
+*/
     //Used to show the help by triggering a toast
     public void showHelp(View view) {
 

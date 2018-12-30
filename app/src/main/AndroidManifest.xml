@@ -29,7 +29,6 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main" />
-        <activity android:name=".HomeActivity" />
 
         <activity android:name=".profil">
 

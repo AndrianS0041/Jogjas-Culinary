@@ -1,94 +1,56 @@
 package com.jogjasculinary.jogjasculinary;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBar;
 
 import com.jogjasculinary.jogjasculinary.fragment.CartFragment;
 import com.jogjasculinary.jogjasculinary.fragment.HomeFragment;
 import com.jogjasculinary.jogjasculinary.fragment.ProfileFragment;
 import com.jogjasculinary.jogjasculinary.fragment.SearchFragment;
-import com.jogjasculinary.jogjasculinary.helper.BottomNavigationBehavior;
 
 
 public class MainActivity extends AppCompatActivity {
-
-    HomeFragment home;
-    SearchFragment search;
-    CartFragment cart;
-    ProfileFragment profil;
-
-    private ActionBar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+2
+        //getting bottom navigation view and attaching the listener
+        BottomNavigationView bottomNav = findViewById(R.id.navigation);
+        bottomNav.setOnNavigationItemSelectedListener(navListener);
 
-        toolbar = getSupportActionBar();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        // attaching bottom sheet behaviour - hide / show on scroll
-        CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) navigation.getLayoutParams();
-        layoutParams.setBehavior(new BottomNavigationBehavior());
-
-        // load the store fragment by default
-        toolbar.setTitle("Home");
-        loadFragment(new HomeFragment());
     }
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected( MenuItem item) {
+                    Fragment selectedFragment = null;
+                    switch (item.getItemId()) {
+                        case R.id.navigation_home:
+                            selectedFragment = new HomeFragment();
+                            break;
+                        case R.id.navigation_search:
+                            selectedFragment = new SearchFragment();
+                            break;
+                        case R.id.navigation_cart:
+                            selectedFragment = new CartFragment();
+                            break;
+                        case R.id.navigation_profile:
+                            selectedFragment = new ProfileFragment();
+                            break;
+                    }
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            ProfileFragment fragment;
-            switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    toolbar.setTitle("Home");
-                    home = new HomeFragment();
-                    loadFragment(home);
                     return true;
-                case R.id.navigation_search:
-                    toolbar.setTitle("Search");
-                    search = new SearchFragment();
-                    loadFragment(search);
-                    return true;
-                case R.id.navigation_cart:
-                    toolbar.setTitle("Cart");
-                    cart = new CartFragment();
-                    loadFragment(cart);
-                    return true;
-                case R.id.navigation_profile:
-                    toolbar.setTitle("Profile");
-                    profil = new ProfileFragment();
-                    loadFragment(profil);
-                    return true;
-            }
-
-            return false;
-        }
-    };
-
-    /**
-     * loading fragment into FrameLayout
-     *
-     * @param fragment
-     */
-    private void loadFragment(Fragment fragment) {
-        // load fragment
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_container, fragment);
-        transaction.addToBackStack(null);
-        transaction.commit();
-    }
-
+                }
+            };
 }
+
