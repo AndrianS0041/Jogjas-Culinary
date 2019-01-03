@@ -29,7 +29,8 @@
             android:label="@string/title_activity_main" />
         <activity android:name=".profil" />
         <activity android:name=".Menu_Makanan_Ringan" />
-        <activity android:name=".Aneka_Mie"></activity>
+        <activity android:name=".Aneka_Mie" />
+        <activity android:name=".Menu_Minuman"></activity>
     </application>
 
 </manifest>
