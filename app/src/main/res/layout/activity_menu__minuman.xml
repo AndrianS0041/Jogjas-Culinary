@@ -1,9 +1,272 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu_Minuman">
+    android:background="@color/design_default_color_primary"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/daftar_minuman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Minuman"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <RelativeLayout
+        android:id="@+id/menu_minuman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/kopi_merapi" />
+
+        <TextView
+            android:id="@+id/nama_minuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="Kopi Merapi"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harga_minuman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginLeft="-112dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toRightOf="@+id/nama_minuman"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Rp. 10.000,-"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/nama_minuman"
+            android:text="TAMBAH"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/menu_minuman2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/wedang_uwuh" />
+
+        <TextView
+            android:id="@+id/nama_minuman2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:text="Wedang Uwuh"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harga_minuman2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_marginLeft="-131dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toRightOf="@+id/nama_minuman2"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Rp. 10.000,-"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_marginStart="38dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/nama_minuman2"
+            android:text="TAMBAH"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/menu_minuman3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/kopi_joss" />
+
+        <TextView
+            android:id="@+id/nama_minuman3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="Kopi Joss"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harga_minuman3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_marginLeft="-92dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toRightOf="@+id/nama_minuman3"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Rp. 10.000,-"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_marginStart="78dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/nama_minuman3"
+            android:text="TAMBAH"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/menu_minuman4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/wedang_ronde" />
+
+        <TextView
+            android:id="@+id/nama_minuman4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:text="Wedang Ronde"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harga_minuman4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_marginLeft="-137dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toRightOf="@+id/nama_minuman4"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Rp. 8.000,-"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/nama_minuman4"
+            android:text="TAMBAH"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/menu_minuman5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/es_dawet" />
+
+        <TextView
+            android:id="@+id/nama_minuman5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/imageView5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:text="Es Dawet"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harga_minuman5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView5"
+            android:layout_marginLeft="-87dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toRightOf="@+id/nama_minuman5"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Rp. 8.000,-"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView5"
+            android:layout_marginStart="81dp"
+            android:layout_marginBottom="-1dp"
+            android:layout_toEndOf="@+id/nama_minuman5"
+            android:text="TAMBAH"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+</LinearLayout>
