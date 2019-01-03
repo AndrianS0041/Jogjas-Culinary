@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#fff"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/kripik_bawang" />
+
+        <TextView
+            android:id="@+id/nama_makanan_ringan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="Keripik Bawang"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harga_makanan_ringan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginLeft="-143dp"
+            android:layout_marginBottom="17dp"
+            android:layout_toRightOf="@+id/nama_makanan_ringan"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Rp. 10.000,-"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_marginStart="19dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/nama_makanan_ringan"
+            android:text="TAMBAH"
+            android:textSize="10dp"/>
+
+    </RelativeLayout>
+</LinearLayout>
