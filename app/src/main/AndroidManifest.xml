@@ -30,7 +30,9 @@
         <activity android:name=".profil" />
         <activity android:name=".Menu_Makanan_Ringan" />
         <activity android:name=".Aneka_Mie" />
-        <activity android:name=".Menu_Minuman"></activity>
+        <activity android:name=".Menu_Minuman" />
+        <activity android:name=".aneka_nasi" />
+        <activity android:name=".aneka_daging"></activity>
     </application>
 
 </manifest>
