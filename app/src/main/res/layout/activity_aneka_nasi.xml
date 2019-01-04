@@ -29,7 +29,7 @@
             android:id="@+id/imageView"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:src="@drawable/Nasi_Gudeg" />
+            android:src="@drawable/nasi_gudeg" />
 
         <TextView
             android:id="@+id/nama_mie1"
@@ -80,7 +80,7 @@
             android:id="@+id/imageView2"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:src="@drawable/Soto_Bathok" />
+            android:src="@drawable/soto_bathok" />
 
         <TextView
             android:id="@+id/nama_mie2"
@@ -131,7 +131,7 @@
             android:id="@+id/imageView3"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:src="@drawable/Nasi_Mercon" />
+            android:src="@drawable/nasi_mercon" />
 
         <TextView
             android:id="@+id/nama_mie3"
@@ -182,7 +182,7 @@
             android:id="@+id/imageView4"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:src="@drawable/Nasi_Kucing" />
+            android:src="@drawable/nasi_kucing" />
 
         <TextView
             android:id="@+id/nama_mie4"
@@ -233,7 +233,7 @@
             android:id="@+id/imageView5"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:src="@drawable/Nasi_Bakar" />
+            android:src="@drawable/nasi_bakar" />
 
         <TextView
             android:id="@+id/nama_mie5"

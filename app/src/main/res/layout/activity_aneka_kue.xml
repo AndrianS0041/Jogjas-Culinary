@@ -1,76 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".aneka_daging"
     android:background="@color/design_default_color_primary"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/daftar_aneka_daging"
+        android:id="@+id/daftar_kue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menu Aneka Daging"
+        android:text="Menu Aneka Kue"
         android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="#fff"/>
 
     <RelativeLayout
-        android:id="@+id/daging1"
+        android:id="@+id/menu_kue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:background="#fff"
-        android:padding="10dp"
-        tools:ignore="InvalidId">
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:src="@drawable/sate_klathak" />
+            android:src="@drawable/kue_apem" />
 
         <TextView
-            android:id="@+id/nama_mie1"
+            android:id="@+id/nama_kue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginLeft="12dp"
             android:layout_toEndOf="@+id/imageView"
             android:layout_toRightOf="@+id/imageView"
-            android:text="Sate Klathak"
+            android:text="Kue Apem"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/harga_daging1"
+            android:id="@+id/harga_kue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView"
-            android:layout_marginLeft="-103dp"
-            android:layout_marginBottom="11dp"
-            android:layout_toRightOf="@+id/nama_mie1"
+            android:layout_marginLeft="-99dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@+id/nama_kue"
             android:layout_weight="1"
             android:paddingLeft="5dp"
-            android:text="Rp. 15.000,-"
+            android:text="Rp. 10.000,-"
             android:textColor="@color/black" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView"
-            android:layout_marginStart="62dp"
+            android:layout_marginStart="69dp"
             android:layout_marginBottom="0dp"
-            android:layout_toEndOf="@+id/nama_mie1"
+            android:layout_toEndOf="@+id/nama_kue"
             android:text="TAMBAH"
             android:textSize="10dp" />
 
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/daging2"
+        android:id="@+id/menu_kue2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -81,47 +77,48 @@
             android:id="@+id/imageView2"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:src="@drawable/ayam_kalasan" />
+            android:src="@drawable/bakpia_pathuk" />
 
         <TextView
-            android:id="@+id/nama_mie2"
+            android:id="@+id/nama_kue2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginLeft="12dp"
             android:layout_toEndOf="@+id/imageView2"
             android:layout_toRightOf="@+id/imageView2"
-            android:text="Ayam Goreng Kalasan"
+            android:text="Bakpia Pathuk"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/harga_daging2"
+            android:id="@+id/harga_kue2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView2"
-            android:layout_marginLeft="-184dp"
-            android:layout_marginBottom="10dp"
-            android:layout_toRightOf="@+id/nama_mie2"
+            android:layout_marginLeft="-131dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toRightOf="@+id/nama_kue2"
             android:layout_weight="1"
             android:paddingLeft="5dp"
-            android:text="Rp. 50.000,-"
+            android:text="Rp. 25.000,-"
             android:textColor="@color/black" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView2"
-            android:layout_marginStart="-33dp"
+            android:layout_marginStart="33dp"
             android:layout_marginBottom="0dp"
-            android:layout_toEndOf="@+id/nama_mie2"
+            android:layout_toEndOf="@+id/nama_kue2"
             android:text="TAMBAH"
             android:textSize="10dp" />
 
     </RelativeLayout>
+
     <RelativeLayout
-        android:id="@+id/daging3"
+        android:id="@+id/menu_kue3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -132,47 +129,47 @@
             android:id="@+id/imageView3"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:src="@drawable/rica_rica" />
+            android:src="@drawable/kue_klepon" />
 
         <TextView
-            android:id="@+id/nama_mie3"
+            android:id="@+id/nama_kue3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginLeft="12dp"
             android:layout_toEndOf="@+id/imageView3"
             android:layout_toRightOf="@+id/imageView3"
-            android:text="Rica-rica Pak Giyanto"
+            android:text="Kue Klepon"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/harga_daging3"
+            android:id="@+id/harga_kue3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView3"
-            android:layout_marginLeft="-186dp"
-            android:layout_marginBottom="10dp"
-            android:layout_toRightOf="@+id/nama_mie3"
+            android:layout_marginLeft="-101dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@+id/nama_kue3"
             android:layout_weight="1"
             android:paddingLeft="5dp"
-            android:text="Rp. 20.000,-"
+            android:text="Rp. 10.000,-"
             android:textColor="@color/black" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView3"
-            android:layout_marginStart="-33dp"
-            android:layout_marginBottom="0dp"
-            android:layout_toEndOf="@+id/nama_mie3"
+            android:layout_marginStart="59dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/nama_kue3"
             android:text="TAMBAH"
             android:textSize="10dp" />
 
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/daging4"
+        android:id="@+id/menu_kue4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -183,47 +180,47 @@
             android:id="@+id/imageView4"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:src="@drawable/iga_bakar" />
+            android:src="@drawable/kue_yangko" />
 
         <TextView
-            android:id="@+id/nama_mie4"
+            android:id="@+id/nama_kue4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginLeft="12dp"
             android:layout_toEndOf="@+id/imageView4"
             android:layout_toRightOf="@+id/imageView4"
-            android:text="Iga Bakar"
+            android:text="Kue Yangko"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/harga_daging4"
+            android:id="@+id/harga_kue4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView4"
-            android:layout_marginLeft="-70dp"
-            android:layout_marginBottom="11dp"
-            android:layout_toRightOf="@+id/nama_mie4"
+            android:layout_marginLeft="-106dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toRightOf="@+id/nama_kue4"
             android:layout_weight="1"
             android:paddingLeft="5dp"
-            android:text="Rp. 30.000,-"
+            android:text="Rp. 15.000,-"
             android:textColor="@color/black" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView4"
-            android:layout_marginStart="80dp"
-            android:layout_marginBottom="0dp"
-            android:layout_toEndOf="@+id/nama_mie4"
+            android:layout_marginStart="56dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/nama_kue4"
             android:text="TAMBAH"
             android:textSize="10dp" />
 
     </RelativeLayout>
     <RelativeLayout
-        android:id="@+id/daging5"
+        android:id="@+id/menu_kue5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
@@ -234,44 +231,43 @@
             android:id="@+id/imageView5"
             android:layout_width="100dp"
             android:layout_height="80dp"
-            android:src="@drawable/sowak" />
+            android:src="@drawable/cemplon" />
 
         <TextView
-            android:id="@+id/nama_mie5"
+            android:id="@+id/nama_kue5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginLeft="12dp"
             android:layout_toEndOf="@+id/imageView5"
             android:layout_toRightOf="@+id/imageView5"
-            android:text="Sowak"
+            android:text="Cemplon"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/harga_daging5"
+            android:id="@+id/harga_kue5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView5"
-            android:layout_marginLeft="-45dp"
+            android:layout_marginLeft="-77dp"
             android:layout_marginBottom="12dp"
-            android:layout_toRightOf="@+id/nama_mie5"
+            android:layout_toRightOf="@+id/nama_kue5"
             android:layout_weight="1"
             android:paddingLeft="5dp"
-            android:text="Rp. 18.000,-"
+            android:text="Rp. 10.000,-"
             android:textColor="@color/black" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageView5"
-            android:layout_marginStart="103dp"
+            android:layout_marginStart="83dp"
             android:layout_marginBottom="0dp"
-            android:layout_toEndOf="@+id/nama_mie5"
+            android:layout_toEndOf="@+id/nama_kue5"
             android:text="TAMBAH"
             android:textSize="10dp" />
 
     </RelativeLayout>
-
 </LinearLayout>

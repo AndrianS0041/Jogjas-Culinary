@@ -32,7 +32,8 @@
         <activity android:name=".Aneka_Mie" />
         <activity android:name=".Menu_Minuman" />
         <activity android:name=".aneka_nasi" />
-        <activity android:name=".aneka_daging"></activity>
+        <activity android:name=".aneka_daging" />
+        <activity android:name=".activity_aneka_kue"></activity>
     </application>
 
 </manifest>
